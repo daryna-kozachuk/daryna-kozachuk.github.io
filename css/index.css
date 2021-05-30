@@ -1,0 +1,84 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+ * { cursor: url(../img/cursor.cur), auto}
+
+ html, body {
+ 	font-family: 'Montserrat', sans-serif;
+ 	font-size: 16px;
+ }
+
+ .title {
+ 	position: absolute;
+ 	left:0;
+ 	top:0;
+ 	margin-top: 40px;
+ 	width:100%;
+ 	z-index: 2;
+ }
+
+ .title h1 {
+ 	margin: auto;
+ 	max-width: 600px;
+	font-size: 2rem;
+    font-weight: 500;
+ 	text-align: center;
+}
+
+ #works {
+ 	min-height: 100vh;
+ 	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	padding-bottom: 5vh;
+}
+
+.image_box {
+	width:70%;
+	position: relative;
+}
+
+.image_box a, 
+.image_box img {
+	display: block;
+	width: 100%;
+	line-height: 0.7;
+}
+
+.image_box .hov {
+	position: absolute;
+	left: 0; top: 0;
+	height: 100%;
+	opacity: 0;
+	z-index: -1;
+	transition: opacity .3s easy-out;
+}
+
+
+.image_box a:hover .hov {
+	opacity: 1;
+	z-index: 0;
+}
+
+@media screen and (max-width: 768px) {
+	.image_box {
+		width:100%;
+	}
+	.title {
+		margin-top: 90px;
+		font-size: 3rem;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.image_box {
+		width:100%;
+	}
+}

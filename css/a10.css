@@ -1,0 +1,239 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;	
+}
+
+* {
+	background-color: #a8dcb2;
+	cursor: url(../img/cursor.cur), auto;
+}
+
+#works {
+	display: flex;
+	justify-content: left;
+}
+
+.image_box {
+	width:40%;
+	position: relative;
+	margin-left: 80px;
+	margin-top: 40px;
+}
+
+.image_box a, 
+.image_box img {
+	display: block;
+	width: 100%;
+	line-height: 0.7;
+}
+
+.image_box .hov {
+	position: absolute;
+	left: 0; top: 0;
+	height: 100%;
+	opacity: 0;
+	z-index: -1;
+	transition: opacity .3s easy-out;
+}
+
+.image_box a:hover .hov {
+	opacity: 1;
+	z-index: 0;
+}
+
+.icon1,
+.icon2,
+.icon3 {
+	position: absolute;
+	max-width: 100px; 
+	right: 0;
+    top: 0;
+    margin-top: 560px; 
+}
+
+.icon1 {
+    margin-right: 500px;  
+}
+
+.icon2 {
+    margin-right: 370px;  
+}
+
+.icon3 {
+    margin-right: 240px;  
+}
+
+.text  {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 40px;
+    margin-right: 280px;
+}
+
+.header {
+  font-size: 55pt;
+  font-family: 'Montserrat', sans-serif;
+  text-align: right;
+  margin-right: 80px;
+}
+
+.block {
+  font-size: 35pt;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.color {
+  font-size: 35pt;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-weight: lighter;
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin-top: 70px;
+}
+
+@media screen and (max-width: 1024px) {
+
+	.image_box {
+		width:45%;
+		margin-top: 120px;
+	}
+
+	.text {
+		margin-top: 120px;
+		margin-right: 120px;
+	}
+
+	.header {
+		font-size: 45px;
+		margin-top: 20px;
+		margin-left: 90px;
+	}
+
+	.block {
+		font-size: 30px;
+		margin-top: 45px;
+	}
+
+	.color {
+		font-size: 30px;
+	}
+
+	.icon1,
+	.icon2,
+	.icon3 {
+		max-width: 70px;
+		margin-top: 500px;
+	}
+
+	.icon1 {
+    margin-right: 300px;  
+	}
+
+	.icon2 {
+	    margin-right: 220px;  
+	}
+
+	.icon3 {
+	    margin-right: 140px;  
+	}
+
+}
+
+@media screen and (max-width: 769px) {
+	.image_box {
+		width:70%;
+		margin-left: 120px;
+		margin-top: 40px;
+	}
+	
+	.text{
+		margin-top: 600px;
+		margin-right: 250px;
+	}
+
+	.header{
+		font-size: 55px;
+	}
+
+	.block{
+		font-size: 30px;
+		margin-top: 20px;
+	}
+
+	.color{
+		margin-top: 20px;
+		font-size: 30px;
+	}
+
+	.icon1,
+	.icon2,
+	.icon3 {
+		max-width: 70px;
+		margin-top: 900px;
+	}
+
+	.icon1 {
+    margin-right: 450px;  
+	}
+
+	.icon2 {
+	    margin-right: 350px;  
+	}
+
+	.icon3 {
+	    margin-right: 250px;  
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.image_box {
+		width:80%;
+		margin-top: 20px;
+		margin-left: 40px;
+	}
+
+	.text{
+		margin-top: 330px;
+		margin-right: 65px;
+	}
+
+	.header{
+		font-size: 40px;
+	}
+
+	.block{
+		margin-top: 20px;
+		font-size: 25px;
+	}
+
+	.color{
+		margin-top: 20px;
+		font-size: 25px;
+	}
+
+	.icon1,
+	.icon2,
+	.icon3 {
+		max-width: 50px;
+		margin-top: 580px;
+	}
+
+	.icon1 {
+    margin-right: 220px;  
+	}
+
+	.icon2 {
+	    margin-right: 160px;  
+	}
+
+	.icon3 {
+	    margin-right: 100px;  
+	}
+}
